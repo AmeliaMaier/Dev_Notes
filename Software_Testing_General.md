@@ -38,9 +38,15 @@ If you need to test code that says if an input is positive, negative, or 0; what
 
 There are 3: everything less than 0, 0, and everything greater than zero
 
-Domain based testing says that everything in each group is equivelant but 
+Domain based testing says that everything in each group is equivelant but that edge cases are as likely or more to cause errors. For this reason, you would test with -1, 0, and 1 if it only allowed ints or something like -.000000001, 0, .000000001 if it allows decimals.
 
-#### Use Stories Based
+#### User Stories Based
+
+A lot of professionally developed software has user stories. These are simple sets of 'if I do this, I expect it to do that'. Using theses stories to plan your unit test not only makes sure you have met all the stated requirements, it also makes it easier to notice where a requirement wasn't clear or specified. 
+
+If you have a user storie that says: "When I provide the correct login information, I expect to be taken to my personalized landing page"
+
+You know know you need a test for the login page that provides the correct login information for a user with a personalized landinng page. 
 
 #### Code Coverage
 
