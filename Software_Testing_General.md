@@ -14,7 +14,7 @@ Developers who is fully responsible for testing their own code and need an basic
 
 One of the biggest splits in software testing is the method of running the test. The two main options are to automate the test with unit tests added to your code base or to test the code manually but going through and making the correct selectsions yourself.
 
-```
+
 When to use automated tests: 
 ⋅⋅* When the end result is testable through code
 ⋅⋅* When you will need to run the test a lot of times
@@ -27,7 +27,6 @@ When to test manually:
 ⋅⋅* When the end result is not testable through code
 ⋅⋅* When you are writing something that will not be reused and is not important
 ⋅⋅* When no time was budgeted for writing automated tests and the project is already behind schedule
-```
 
 ### How to come up with what to test:
 
@@ -52,7 +51,7 @@ Domain based testing says that everything in each group is equivelant but that e
 A lot of professionally developed software has user stories. These are simple sets of 'if I do this, I expect it to do that'. Using theses stories to plan your unit test not only makes sure you have met all the stated requirements, it also makes it easier to notice where a requirement wasn't clear or specified. 
 
 ```
-If you have a user storie that says: "When I provide the correct login information, I expect to be taken to my personalized landing page"
+If you have a user story that says: "When I provide the correct login information, I expect to be taken to my personalized landing page"
 ```
 
 You know know you need a test for the login page that provides the correct login information for a user with a personalized landinng page. You should also notice that, if no other user stories cover other login scenarios, that no requirement has been provided for exactly what should happen if an incorrect login is provided. In this case, you know the login shouldn't be allowed but may need to check back with the users for exactly what behavior they expect.
