@@ -16,17 +16,27 @@ One of the biggest splits in software testing is the method of running the test.
 
 
 When to use automated tests: 
-⋅⋅* When the end result is testable through code
-⋅⋅* When you will need to run the test a lot of times
-⋅⋅* When the test has a lot of steps or complicated logic
-⋅⋅* When you need to document special use cases
-⋅⋅* To make sure future code changes don't break the code you are currently working on
-⋅⋅* When your office has a policy that all code be given unit tests
+
+⋅ When the end result is testable through code
+
+⋅ When you will need to run the test a lot of times
+
+⋅ When the test has a lot of steps or complicated logic
+
+⋅ When you need to document special use cases
+
+⋅ To make sure future code changes don't break the code you are currently working on
+
+⋅ When your office has a policy that all code be given unit tests
 
 When to test manually:
-⋅⋅* When the end result is not testable through code
-⋅⋅* When you are writing something that will not be reused and is not important
-⋅⋅* When no time was budgeted for writing automated tests and the project is already behind schedule
+
+⋅ When the end result is not testable through code
+
+⋅ When you are writing something that will not be reused and is not important
+
+⋅ When no time was budgeted for writing automated tests and the project is already behind schedule
+
 
 ### How to come up with what to test:
 
