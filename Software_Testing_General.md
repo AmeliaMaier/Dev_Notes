@@ -10,6 +10,17 @@ As you go through, you will notice that many topics overlap, this is part of wha
 
 Developers who is fully responsible for testing their own code and need an basic introduction into the concepts around software testing.
 
+### What is Software Testing: 
+
+Software testing is simply running some or all of your code in such a way you can confirm outcome is correct. A test case is one test intended to confirm one outcome is correct. In most projects, you will need a lot of test cases to properly test the whole thing. Every test case has a starting point, steps, an end point, an expected result, and an actual result. The starting point is where you start. It doesn't have to be opening the program. In unit testing, your starting point is usually the beginning of a function/method the end point is where your test ends and your results are evaluated. Like the starting point, this can be anywhere with a testable end state. In unit testing, it will usually be when your function/method returns a value. The expected result is what you expected to see happen. The actual result is what actually happened. You compare the two to find the test case result. 
+
+
+| | True     | False           |
+|:-------------:|:-------------: |:-------------:| 
+| True | Pass     | Fail | 
+| False | Fail      | Pass      | 
+
+
 ### Automation vs Manual:
 
 One of the biggest splits in software testing is the method of running the test. The two main options are to automate the test with unit tests added to your code base or to test the code manually but going through and making the correct selectsions yourself.
