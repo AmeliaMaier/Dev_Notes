@@ -83,7 +83,7 @@ You know know you need a test for the login page that provides the correct login
 
 A lot of unit tests are written to insure complete code coverage. What this means is that every line of code is tested with one or more unit tests. If you have logical splits in your code, both sides of the split should have unit tests.
 
-If you have something similar to this sudo code:
+If you have something similar to this pseudo code:
 
 ```
 if input > 10
@@ -99,7 +99,7 @@ you should have a unit test where input is over 10 and a unit test where input i
 
 Path coverage is similar to code coverage, but often means writing a lot more unit tests. A path is any list of steps a user can take. Usually, you start all paths are opening the program (or logging in) and end all of them when the program is closed (or you log out). If there are any areas where looping is possible, full path coverage will be impossible. In most enterprise level programs, full path coverage is impracticle even if it is possible. 
 
-If you are looking at a very simple program that only does the following sudo code:
+If you are looking at a very simple program that only does the following pseudo code:
 
 ```
 iif input > 10
