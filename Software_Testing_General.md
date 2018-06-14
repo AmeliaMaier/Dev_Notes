@@ -112,7 +112,7 @@ Your paths would be the same as your code coverage: you should have a unit test 
 If you have a more complicated program that includes the menu below:
 
 ```
-1. Sudokua
+1. Sudoku
 2. Connect 4
 3. Hangman
 4. Exit
