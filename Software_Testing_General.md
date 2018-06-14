@@ -44,6 +44,8 @@ When to test manually:
 
 ⋅ When the end result is not testable through code
 
+⋅ When the project is changing so quickly automated tests will be impossible to maintain
+
 ⋅ When you are writing something that will not be reused and is not important
 
 ⋅ When no time was budgeted for writing automated tests and the project is already behind schedule
@@ -125,6 +127,8 @@ Feature coverage is very similar to designing unit tests around user stories. Yo
 
 Integration testing is any time you ensure two or more pieces of code work together. This can be as small as making sure all the code needed to log in and out work end to end or as large as ensureing your entire program can be run with different selections for a given length of time without crashing or causing an error (monkey testing). Integration testing and unit testing are often mentioned as two seperate things. Depending on how you define unit testing, this may be true. 
 
+#### Unit Test
+
 Some people define unit testing as any testing done by a developer (usually the definition used if a testing team is available and participating in the project). If that is the definition you are using and no testing team is working with you, you have to remember to include integration tests in your unit testing.
 
-Some people define unit testing as the tests that ensure each tiny piece of code (in methods or functions) works the way you expect them to. If this is the definition you are using, you will want to seperately run integration tests.
+Some people define unit testing as the tests that ensure each tiny piece of code (in methods or functions) works the way you expect them to. If this is the definition you are using, you will want to seperately create and run integration tests.
