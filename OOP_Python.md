@@ -1,3 +1,14 @@
+### Purpose: 
+
+This document is intended to offer a general overview of object oriented programming. 
+
+### Note:
+As you go through, you will notice that many topics overlap, this is part of what leads to confusion when people are just starting out. Many of the concepts in object oriented programming only work when used together and therefor can not be discussed entirly on their own. 
+
+### Intended Audiance:
+
+People looking to learn to code, Python Junior Devs, and Python Developers who what to quickly review the basics of OOP.
+
 
 # Object Oriented Programming (OOP)
 
@@ -89,5 +100,7 @@ https://stackoverflow.com/questions/7483947/what-is-the-difference-between-objec
 https://www.quora.com/What-is-the-difference-between-abstraction-and-encapsulation-in-Python
 
 http://blog.thedigitalcatonline.com/blog/2014/08/21/python-3-oop-part-4-polymorphism/
+
+https://www.quora.com/What-is-the-difference-between-parameters-and-arguments-in-Python
 
 
