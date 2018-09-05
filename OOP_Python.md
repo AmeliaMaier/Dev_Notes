@@ -14,6 +14,9 @@ Understanding OOP is important. It helps with code organization, reusability, te
 >>A method is able to operate on data that is contained within the class (remembering that an object is an instance of a class - the class is the definition, the object is an instance of that data).
 [more](https://stackoverflow.com/questions/155609/whats-the-difference-between-a-method-and-a-function)
 
+### Parameters vs Arguments:
+[A parameter is a variable in a method definition. When a method is called, the arguments are the data you pass into the method's parameters.](https://www.quora.com/What-is-the-difference-between-parameters-and-arguments-in-Python)
+
 ### Class
 [Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.](https://docs.python.org/3/tutorial/classes.html)
 
@@ -42,9 +45,12 @@ Python is all about inheritance. You can create a class that inherits from multi
 ### Polymorphism
 [Simply put, polymorphism gives a way to use a class exactly like its parent so there’s no confusion with mixing types. But each child class keeps its own methods as they are. This typically happens by defining a (parent) interface to be reused. It outlines a bunch of common methods. Then, each child class implements its own version of these methods. Any time a collection (such as a list) or a method expects an instance of the parent (where common methods are outlined), the language takes care of evaluating the right implementation of the common method — regardless of which child is passed.](https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
 
+[The term polymorphism, in the OOP lingo, refers to the ability of an object to adapt the code to the type of the data it is processing. Polymorphism has two major applications in an OOP language. The first is that an object may provide different implementations of one of its methods depending on the type of the input parameters. The second is that code written for a given type of data may be used on data with a derived type, i.e. methods understand the class hierarchy of a type](http://blog.thedigitalcatonline.com/blog/2014/08/21/python-3-oop-part-4-polymorphism/)
 
 #### Python Polymorphism
+Half of polymorphism works in Python. Unlike languages like Java and C#, you can't use operator overloading: defining multiple methods or functions in the same class/file with different parameters. In Python, only the last method defined with a given name will exist in that namespace.
 
+In Python, children of a class can overwrite methods that exist in the parent and/or other without to language becoming confused. This allows inheritance to be effective and useful. 
 
 ### Encapsulation
 [Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods.](https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
@@ -81,5 +87,7 @@ https://docs.python.org/3/tutorial/classes.html
 https://stackoverflow.com/questions/7483947/what-is-the-difference-between-objects-and-classes-in-python
 
 https://www.quora.com/What-is-the-difference-between-abstraction-and-encapsulation-in-Python
+
+http://blog.thedigitalcatonline.com/blog/2014/08/21/python-3-oop-part-4-polymorphism/
 
 
