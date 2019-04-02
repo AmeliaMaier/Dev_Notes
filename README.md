@@ -5,6 +5,8 @@
 A list of all the topics currently available in my python notes
 >[Object Oriented Programming - Python Specific](https://github.com/AmeliaMaier/Dev_Notes/blob/master/OOP_Python.md) 
 
+>[Data Structures and Algorithms - Python Specific](https://github.com/AmeliaMaier/Dev_Notes/blob/master/Data_Structures_Algorithms.md)
+
 
 ## Software Testing
 [General Overview](https://github.com/AmeliaMaier/Dev_Notes/blob/master/Software_Testing_General.md)
