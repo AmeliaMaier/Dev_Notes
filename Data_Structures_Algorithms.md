@@ -124,7 +124,92 @@ If Else: Logical statement trees that execute the code in the first statement th
 No
 ```
 
+### Algorithm Analysis
+Comparing algorithms purely based on the resources (time, memory, cpus) it uses.
+> Algorithm analysis is concerned with comparing algorithms based upon the amount of computing resources that each algorithm uses. We want to be able to consider two algorithms and say that one is better than the other because it is more efficient in its use of those resources or perhaps because it simply uses fewer. <sup>1</sup>
 
+#### Benchmarking
+Using the time function to compute the total run time of algorithms so they can be compared to each other directly. This usually assumes all the algorithms being compared are run on the same machine and under the same coditions so that the resources available are consistent.
 
+Alternatively, you can run compare the same algorithym to itself, but with different resources available to determine its dependancy level on cpus/memory/ect.
 
+You can also use the built in timeit functionality of python.
 
+#### Big-O Notation
+> When trying to characterize an algorithm's efficiency in terms of execution time, independent of any particular program or computer, it is important to quantify the number of operations or steps that the algorithm will require. If each of these steps is considered to be a basic unit of computation, then the execution time for an algorithm can be expressed as the number of steps required to solve the problem. Deciding on an appropriate basic unit of computation can be a complicated problem and will depend on how the algorithm is implemented...It turns out that the exact number of operations is not as important as determing the most dominant part of the T(n) function. In other words, as the problem getst larger, some portion of the T(n) function tends to overpower the rest. This dominant term is what, in the end, is used for comparison. The order of magnitude function describes the part of the T(n) that increases the fastest as the value of n increases. It is often called Big-O notation.<sup>1</sup>
+
+Common Functions for Big-O
+<img src='http://www.kestrelblackmore.com/assets/img/blog/big-o-complexity.png'>
+> from http://www.kestrelblackmore.com/assets/img/blog/big-o-complexity.png
+
+Anagram Detection Example
+
+O(n<sup>2</sup>)
+```Python
+def anagramSolution1(s1,s2):
+  alist = list(s2)
+  pos1 = 0
+  stillOk = True
+  while pos1 < len(s1) and stillOk:
+    pos2 = 0
+    found = False
+    while pos2 < len(alist) and not found:
+      if s1[pos1] == alist[pos2]:
+        found = True
+      else:
+        pos2 = pos2 + 1
+    if found:
+      alist[pos2] = None
+    else:
+      stillOk = False
+    pos1 = pos1 + 1
+return stillOk
+```
+
+O(nlogn)
+```Python
+def anagramSolution2(s1, s2):
+  alist1 = list(s1)
+  alist2 = list(s2)
+  
+  alist1.sort()
+  alist2.sort()
+  
+  pos = 0
+  matches = True
+  
+  while pos < len(s1) and matches:
+    if alist1[pos] == alist2[pos]:
+      pos = pos + 1
+    else:
+      matches = False
+      
+ return matches
+```
+
+O(n)
+```Python
+def anagramSolution3(s1,s2):
+  c1 = [0]*26
+  c2 = [0]*26
+  
+  for i in range(len(s1)):
+    pos = ord(s1[i]) - ord('a')
+    c1[pos] += 1
+    
+  for i in range(len(s2)):
+    pos = ord(s2[i]) - ord('a')
+    c2[pos] += 1
+    
+  j = 0
+  stillOk=True
+  while j < 26 and stillOk:
+    if c1[j] == c2[j]:
+      j += 1
+    else:
+      stillOk = False
+      
+  return stillOk
+```
+
+Timing for common operations on built in data types https://wiki.python.org/moin/TimeComplexity
